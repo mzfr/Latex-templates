@@ -1,0 +1,30 @@
+\newpage
+\thispagestyle{empty}
+\chapter{RESULTS AND DISCUSSION}
+During the 3 month period I mostly ended up working on improving the storage capability of the honeypot. other than that there were some small fixes done by me. I also improved the documentation of the Honeypot to include all the new work that was done by be over the period. I made sure that no deprecated information was present on the documentation.
+
+Below is the list of all the code contribution that was done by me:
+
+\begin{itemize}
+    \item Adding support for Postgresql: \href{https://github.com/mushorg/tanner/pull/388}{PR-388}
+        
+    \item Update Tanner API and Tanner Web to make it compatible with the new Postgres setup. \href{https://github.com/mushorg/tanner/pull/391}{PR-391}
+
+    \item Update existing tests according to new changes. \href{https://github.com/mushorg/tanner/pull/392}{PR-392}
+
+    \item Make an analysis of the session a separate background task. In the old setup, it was happening within the session deletion task. \href{https://github.com/mushorg/tanner/pull/395}{PR-395}
+
+    \item Add support for multiple filters in API and WEB. \href{https://github.com/mushorg/tanner/pull/396}{PR-396}
+
+    \item Drop the support of Python 3.6 \href{https://github.com/mushorg/tanner/pull/397}{PR-397}
+
+    \item Deploy master branch directly to the server using GitHub action. \href{https://github.com/mushorg/tanner/pull/390}{PR-390}
+
+    \item Add migration script for easy migration from old to newer setup. \href{https://github.com/mushorg/tanner/pull/399}{PR-399}
+    
+    \item Use aioftp instead of FTP, continuing the work from \href{https://github.com/mushorg/tanner/pull/385}{PR-385} to \href{https://github.com/mushorg/tanner/pull/398}{398}
+
+    \item Add support for twig template injection \href{https://github.com/mushorg/tanner/pull/401}{PR-401}
+
+\end{itemize}
+\vfill

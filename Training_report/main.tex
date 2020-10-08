@@ -1,0 +1,54 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\LARGE}
+\usepackage{a4wide}
+\usepackage{anysize}
+\usepackage{cite}
+\renewcommand\bibname{Reference}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = blue,
+            citecolor = black,
+            anchorcolor = black]{hyperref}
+\usepackage{wrapfig}
+\usepackage{ipec}
+
+\renewcommand{\baselinestretch}{1.2} %line spacing
+\marginsize{1.2in}{1.2in}{1in}{1in}   %left right top bottom
+%\textwidth 6in
+% Title Page
+
+\begin{document}
+\pagenumbering{roman}
+\pagestyle{plain}
+\def\title{Industrial Training Report}
+\def\what{The Honeynet Project}
+\def\who{Mehtab Zafar}
+\def\course{Bachelor of Engineering}
+
+\titlpage
+
+
+
+\newpage
+\tableofcontents{}
+\pagenumbering{arabic}
+
+\input{certificate.tex}
+\input{declaration.tex}
+\input{acknowledgement.tex}
+\input{preface.tex}
+\input{abstract.tex}
+\input{intro.tex}
+\input{sw_training.tex}
+\input{project_work.tex}
+\input{results_and_discuss.tex}
+\input{references.tex}
+
+\end{document}          
